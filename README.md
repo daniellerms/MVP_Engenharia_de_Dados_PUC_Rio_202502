@@ -33,5 +33,5 @@ As perguntas a serem respondidas são:
 
 ## teste conexão com o notebook
 Veja nosso guia de análise de dados neste %md
-Veja nosso guia de análise de dados neste [Abrir notebook de análise](notebooks/02%20-%20Transformação%20dos%20Dados.ipynb)
+Veja nosso guia de análise de dados neste [Abrir notebook de análise](/02%20-%20Transformação%20dos%20Dados.ipynb)
 
