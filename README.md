@@ -38,6 +38,7 @@ As perguntas a serem respondidas são:
 **4) Análise das média das disciplinas considerando fatores os socioeconômicos:**
 - **A)** Nível de educação dos pais
 - **b)** Renda
+- **c)** Por tipo de escola
 
 **5) Perfil dos participantes que tiraram mil na redação.**
 
@@ -114,7 +115,7 @@ Essa tabela contém as UF da federação e uma chave SK_LOCAL que se realciona c
 
 ##### 3.3 Diagrama Entidade Relacionamento
 
-![Diagrama Entidade Relacionamento](./Modelo%20ER.drawio.png)
+![Diagrama Entidade Relacionamento](./Modelo%20ER.png)
     
 #### 4. Carga
 A etapa de carga dos dados para o Data Warehoure/ Data Lake foi realizada no Notebook **01 - Ingestão de Dados**, onde foi realizada a carga inicial dos dados bruto (camada bronze).
@@ -133,8 +134,17 @@ A etapa de carga foi realizada no no Notebook **03 - Tabelas Gold**, onde foram 
 A solução do problema foi realizada no notebook **04 - Solução do Problema**, onde foram feitas as análises com o intuito de responder as perguntas levantadas no objetivo deste projeto.
 
 
-#### 6. Autoavaliação
+### 6. Autoavaliação
+O MPV foi concluído com sucesso,  uma vez que foi desenvolvido um pipeline de dados usando uma tecnologia na nuvem (o Databricks), seguindo todas as etapas especificadas na disciplina: busca, coleta, modelagem, carga e análise dos dados.
+ - Busca e coleta dos dados no site do INEP
+ - Modelagem dos dados em um modelo estrela com uma tabela fato e duas dimensões. Desenhadas no Diagrama ER e catalogada no Catálogo de Dados.
+ - Carga inicial ao subir o CSV no ambiente do Databricks e seu armazenamento na camada broze e, numa segunda etapa, a partir da criação das tabelas gold.
+ - Análise dos dados usando queries em SQL, Dataframes no Pandas e gráficos com a biblioteca Matplotlib.
 
+Com isso, é possível concluir que o desenvolvimento do projeto foi realizado com êxito e envolveu diversos desafios técnicos, desde o aprimoramento dos meus conhecimentos nas bibliotecas Pandas e Matplotlib do Python, até o aprendizado e a aplicação prática dos conceitos de modelagem de dados. Além disso, este MVP também se mostrou desafiador ao ampliar meus conhecimentos em análise de dados e proporcionar o aprendizado no uso da ferramenta Databricks.
+
+
+As principais dificuldades encontradas durante a execução do projeto foram por falta de conhecimento prévio em alguns conceitos importantes, que foram sendo sanados ao longo do MVP. Outro ponto de dificuldade foi a falta da informação sobre o tipo de escola de origem, já que 64.38% dos inscritos não respondeu essa pergunta e um dos objetivos que eu gostaria de analisar é sobre a influência do tipo de escola na média das notas, objetivo que não alcançado pela falta de dados.
 
     
 
