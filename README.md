@@ -14,7 +14,7 @@ Esse projeto tem como objetivo constuir um pipeline de dados usando como ferrame
 
 As perguntas a serem respondidas são: 
 
-**1)** Quantidade de inscritos: 
+**1) Quantidade de inscritos:**
 - **A)** Total;
 - **B)** Faixa etária;
 - **C)** Por sexo;
@@ -23,7 +23,7 @@ As perguntas a serem respondidas são:
 - **F)** Por estado;
 - **G)** Por renda familiar
 
-**2)** Quantidade de faltantes e perfil dos faltantes.
+**2) Quantidade de faltantes e perfil dos faltantes.**
 - **A)** Total;
 - **B)** Faixa etária;
 - **C)** Por sexo;
@@ -33,22 +33,22 @@ As perguntas a serem respondidas são:
 - **G)** Por renda familiar
 
 
-**3)** Notas por UF.
+**3) Notas por UF.**
 
-**4)** Análise das média das disciplinas considerando fatores os socioeconômicos: 
+**4) Análise das média das disciplinas considerando fatores os socioeconômicos:**
 - **A)** Nível de educação dos pais
 - **b)** Renda
 
-5) Perfil dos participantes que tiraram mil na redação.
+**5) Perfil dos participantes que tiraram mil na redação.**
 
 
 #Detalhamento
-1. Busca pelos dados
+####1. Busca pelos dados
     
 
     Com base nas sugestões oferecidas na Disciplina MVP, os dados utilizados nesse projetos foram encontrados no site do GOV, mas especificamente no portal do INEP.
 
-2. Coleta
+####2. Coleta
 
     Conforme mencionado, os dados utilizados nesse projeto são compostos pelos microdados do Exame Nacional do Ensino Médio (ENEM) referentes ao ano de 2023, que são disponibilizados publicamente no site do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP).
 
@@ -58,14 +58,14 @@ As perguntas a serem respondidas são:
     Após o download dos arquivos, o CSV com os microdados foi armazenado na plataforma Databricks, carregado para o sistema de arquivos distribuído (DBFS) da plataforma e a partir disso foi criada a tabela bronze, com os dados brutos a serem usados no projeto.
 
 
-3. Modelagem
+####3. Modelagem
 O modelo escolhidos para estruturar os dados deste MPV foi o Esquema Estrela.
 
-    3.1 Estrutura do Esquema Estrela
+#####   3.1 Estrutura do Esquema Estrela
     - Tabela Fato: `gold.fato_enem2023`
     - Tabelas Dimensão: `gold.dim_local` e `gold.dim_candidato` 
 
-    3.2 Catálogo de Dados
+#####   3.2 Catálogo de Dados
 
      - Tabela `gold.fato_enem2023` 
      
@@ -117,11 +117,11 @@ Essa tabela contém as UF da federação e uma chave SK_LOCAL que se realciona c
 
 
 
-3.3 Diagrama Entidade Relacionamento
+##### 3.3 Diagrama Entidade Relacionamento
 
 ![Diagrama Entidade Relacionamento](Modelo ER.drawio.png)
     
-4. Carga
+#### 4. Carga
 
     A etapa de carga dos dados para o Data Warehoure/ Data Lake foi realizada no Notebook **01 - Ingestão de Dados**, onde foi realizada a carga inicial dos dados bruto (camada bronze).
 
@@ -130,7 +130,7 @@ Essa tabela contém as UF da federação e uma chave SK_LOCAL que se realciona c
     A etapa de carga foi realizada no no Notebook **03 - Tabelas Gold**, onde foram criadas as tabelas fato e dimensão na camada Gold.
 
 
-5. Análise
+#### 5. Análise
 
     a. Qualidade de dados
         
@@ -141,7 +141,7 @@ Essa tabela contém as UF da federação e uma chave SK_LOCAL que se realciona c
     A solução do problema foi realizada no notebook **04 - Solução do Problema**, onde foram feitas as análises com o intuito de responder as perguntas levantadas no objetivo deste projeto.
 
 
-Autoavaliação
+#### 6. Autoavaliação
 
 
     
