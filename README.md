@@ -40,15 +40,13 @@ As perguntas a serem respondidas são:
 - **b)** Renda
 
 **5) Perfil dos participantes que tiraram mil na redação.**
-
-
-#Detalhamento
-####1. Busca pelos dados
+    #Detalhamento
+    ####1. Busca pelos dados
     
 
     Com base nas sugestões oferecidas na Disciplina MVP, os dados utilizados nesse projetos foram encontrados no site do GOV, mas especificamente no portal do INEP.
 
-####2. Coleta
+    ####2. Coleta
 
     Conforme mencionado, os dados utilizados nesse projeto são compostos pelos microdados do Exame Nacional do Ensino Médio (ENEM) referentes ao ano de 2023, que são disponibilizados publicamente no site do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP).
 
@@ -58,14 +56,14 @@ As perguntas a serem respondidas são:
     Após o download dos arquivos, o CSV com os microdados foi armazenado na plataforma Databricks, carregado para o sistema de arquivos distribuído (DBFS) da plataforma e a partir disso foi criada a tabela bronze, com os dados brutos a serem usados no projeto.
 
 
-####3. Modelagem
+    ####3. Modelagem
 O modelo escolhidos para estruturar os dados deste MPV foi o Esquema Estrela.
 
-#####   3.1 Estrutura do Esquema Estrela
+    #####   3.1 Estrutura do Esquema Estrela
     - Tabela Fato: `gold.fato_enem2023`
     - Tabelas Dimensão: `gold.dim_local` e `gold.dim_candidato` 
 
-#####   3.2 Catálogo de Dados
+    #####   3.2 Catálogo de Dados
 
      - Tabela `gold.fato_enem2023` 
      
