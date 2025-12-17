@@ -127,10 +127,10 @@ A etapa de carga foi realizada no no Notebook **03 - Tabelas Gold**, onde foram 
 
 #### 5. Análise
 
-#### a. Qualidade de dados
+##### a. Qualidade de dados
  A etapa de analise de cada atributo do conjuto de dados no que diz respeiro a qualidade dos dados foi realizada no Notebook **02 - Transformação dos Dados**
 
-#### b. Solução do problema
+##### b. Solução do problema
 A solução do problema foi realizada no notebook **04 - Solução do Problema**, onde foram feitas as análises com o intuito de responder as perguntas levantadas no objetivo deste projeto.
 
 
