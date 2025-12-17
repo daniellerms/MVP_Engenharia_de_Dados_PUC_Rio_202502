@@ -146,5 +146,8 @@ Com isso, é possível concluir que o desenvolvimento do projeto foi realizado c
 
 As principais dificuldades encontradas durante a execução do projeto estiveram relacionadas à falta de conhecimento prévio sobre alguns conceitos importantes, os quais foram sendo gradualmente sanados ao longo do desenvolvimento do MVP. Outro ponto de dificuldade foi a ausência de informações sobre o tipo de escola de origem, uma vez que 64,38% dos inscritos não responderam a essa pergunta. Dessa forma, o objetivo de analisar a influência do tipo de escola na média das notas não pôde ser plenamente alcançado devido à indisponibilidade dos dados.
 
+Como melhorias futuras, seria importante ampliar a base de dados, acrescentando informações de anos anteriores, de modo a possibilitar análises históricas dos microdados do Enem. Além disso, seria interessante desenvolver um dashboard utilizando o próprio ambiente do Databricks ou ferramentas como o Power BI, tornando as análises mais acessíveis ao público. Por fim, seria relevante automatizar o processo de ingestão dos dados.
+
+
     
 
