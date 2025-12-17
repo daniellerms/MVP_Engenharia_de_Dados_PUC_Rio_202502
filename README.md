@@ -44,10 +44,10 @@ As perguntas a serem respondidas são:
 
 
 #Detalhamento
-####1. Busca pelos dados
+#### 1. Busca pelos dados
 Com base nas sugestões oferecidas na Disciplina MVP, os dados utilizados nesse projetos foram encontrados no site do GOV, mas especificamente no portal do INEP.
 
-####2. Coleta
+#### 2. Coleta
 Conforme mencionado, os dados utilizados nesse projeto são compostos pelos microdados do Exame Nacional do Ensino Médio (ENEM) referentes ao ano de 2023, que são disponibilizados publicamente no site do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP).
 
 Os dados foram coletados a partir do download manual do arquivo CSV com os microdados,uma vez que se tratam de públicos e estruturados. Os arquivos baixados incluem os microdados, com assim como a [documentação](https://dbc-584c76cc-ac43.cloud.databricks.com/editor/files/4433784861577730?o=3173063251617445) e o [dicionário de dados](/Workspace/Users/daniellerocha21@gmail.com/MVP_Engenharia_de_Dados_PUC_Rio_202502/Dicionário_Microdados_Enem_2023.xlsx) referente ao ano analisado.
@@ -143,8 +143,7 @@ O MPV foi concluído com sucesso,  uma vez que foi desenvolvido um pipeline de d
 
 Com isso, é possível concluir que o desenvolvimento do projeto foi realizado com êxito e envolveu diversos desafios técnicos, desde o aprimoramento dos meus conhecimentos nas bibliotecas Pandas e Matplotlib do Python, até o aprendizado e a aplicação prática dos conceitos de modelagem de dados. Além disso, este MVP também se mostrou desafiador ao ampliar meus conhecimentos em análise de dados e proporcionar o aprendizado no uso da ferramenta Databricks.
 
-
-As principais dificuldades encontradas durante a execução do projeto foram por falta de conhecimento prévio em alguns conceitos importantes, que foram sendo sanados ao longo do MVP. Outro ponto de dificuldade foi a falta da informação sobre o tipo de escola de origem, já que 64.38% dos inscritos não respondeu essa pergunta e um dos objetivos que eu gostaria de analisar é sobre a influência do tipo de escola na média das notas, objetivo que não alcançado pela falta de dados.
+As principais dificuldades encontradas durante a execução do projeto estiveram relacionadas à falta de conhecimento prévio sobre alguns conceitos importantes, os quais foram sendo gradualmente sanados ao longo do desenvolvimento do MVP. Outro ponto de dificuldade foi a ausência de informações sobre o tipo de escola de origem, uma vez que 64,38% dos inscritos não responderam a essa pergunta. Dessa forma, o objetivo de analisar a influência do tipo de escola na média das notas não pôde ser plenamente alcançado devido à indisponibilidade dos dados.
 
     
 
