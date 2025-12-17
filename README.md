@@ -56,7 +56,7 @@ Os dados foram coletados a partir do download manual do arquivo CSV com os micro
 Após o download dos arquivos, o CSV com os microdados foi armazenado na plataforma Databricks, carregado para o sistema de arquivos distribuído (DBFS) da plataforma e a partir disso foi criada a tabela bronze, com os dados brutos a serem usados no projeto.
 
 
-####3. Modelagem
+#### 3. Modelagem
 O modelo escolhidos para estruturar os dados deste MPV foi o Esquema Estrela.
 
 #####   3.1 Estrutura do Esquema Estrela
