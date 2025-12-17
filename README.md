@@ -58,14 +58,13 @@ Após o download dos arquivos, o CSV com os microdados foi armazenado na platafo
 O modelo escolhidos para estruturar os dados deste MPV foi o Esquema Estrela.
 
 #####   3.1 Estrutura do Esquema Estrela
-    - Tabela Fato: `gold.fato_enem2023`
-    - Tabelas Dimensão: `gold.dim_local` e `gold.dim_candidato` 
+- Tabela Fato: `gold.fato_enem2023`
+- Tabelas Dimensão: `gold.dim_local` e `gold.dim_candidato` 
 
 #####   3.2 Catálogo de Dados
-
-     - Tabela `gold.fato_enem2023` 
+- Tabela `gold.fato_enem2023` 
      
-        Essa tabela é a parte central do model estrela. Nela, estão presentes as notas dos candidatos em cada um das provas, assim como o indicador de presença nas provas. Ela se relaciona com `gold.dim_candidato` e `gold.dim_local` a partir de chaves estrageiras.
+Essa tabela é a parte central do model estrela. Nela, estão presentes as notas dos candidatos em cada um das provas, assim como o indicador de presença nas provas. Ela se relaciona com `gold.dim_candidato` e `gold.dim_local` a partir de chaves estrageiras.
 
 | PK/FK  | Nome da Coluna | Descrição | Datatype | Tamanho | Domínio | Relacionamento |
 |-----|---------------|-----------|---------|---------|------------------|---------------|
