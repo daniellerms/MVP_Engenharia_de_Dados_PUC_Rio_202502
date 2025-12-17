@@ -64,7 +64,7 @@ O modelo escolhidos para estruturar os dados deste MPV foi o Esquema Estrela.
 #####   3.2 Catálogo de Dados
 - Tabela `gold.fato_enem2023` 
      
-Essa tabela é a parte central do model estrela. Nela, estão presentes as notas dos candidatos em cada um das provas, assim como o indicador de presença nas provas. Ela se relaciona com `gold.dim_candidato` e `gold.dim_local` a partir de chaves estrageiras.
+Essa tabela é a parte central do modelo estrela. Nela, estão presentes as notas dos candidatos em cada um das provas, assim como o indicador de presença nas provas. Ela se relaciona com `gold.dim_candidato` e `gold.dim_local` a partir de chaves estrageiras.
 
 | PK/FK  | Nome da Coluna | Descrição | Datatype | Tamanho | Domínio | Relacionamento |
 |-----|---------------|-----------|---------|---------|------------------|---------------|
@@ -114,7 +114,7 @@ Essa tabela contém as UF da federação e uma chave SK_LOCAL que se realciona c
 
 ##### 3.3 Diagrama Entidade Relacionamento
 
-![Diagrama Entidade Relacionamento](Modelo ER.drawio.png)
+![Diagrama Entidade Relacionamento](./Modelo%20ER.drawio.png)
     
 #### 4. Carga
 A etapa de carga dos dados para o Data Warehoure/ Data Lake foi realizada no Notebook **01 - Ingestão de Dados**, onde foi realizada a carga inicial dos dados bruto (camada bronze).
