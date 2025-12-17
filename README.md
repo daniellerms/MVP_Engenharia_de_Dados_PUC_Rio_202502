@@ -40,30 +40,28 @@ As perguntas a serem respondidas são:
 - **b)** Renda
 
 **5) Perfil dos participantes que tiraram mil na redação.**
-    #Detalhamento
-    ####1. Busca pelos dados
-    
-
-    Com base nas sugestões oferecidas na Disciplina MVP, os dados utilizados nesse projetos foram encontrados no site do GOV, mas especificamente no portal do INEP.
-
-    ####2. Coleta
-
-    Conforme mencionado, os dados utilizados nesse projeto são compostos pelos microdados do Exame Nacional do Ensino Médio (ENEM) referentes ao ano de 2023, que são disponibilizados publicamente no site do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP).
 
 
-    Os dados foram coletados a partir do download manual do arquivo CSV com os microdados,uma vez que se tratam de públicos e estruturados. Os arquivos baixados incluem os microdados, com assim como a [documentação](https://dbc-584c76cc-ac43.cloud.databricks.com/editor/files/4433784861577730?o=3173063251617445) e o [dicionário de dados](/Workspace/Users/daniellerocha21@gmail.com/MVP_Engenharia_de_Dados_PUC_Rio_202502/Dicionário_Microdados_Enem_2023.xlsx) referente ao ano analisado.
+#Detalhamento
+####1. Busca pelos dados
+Com base nas sugestões oferecidas na Disciplina MVP, os dados utilizados nesse projetos foram encontrados no site do GOV, mas especificamente no portal do INEP.
 
-    Após o download dos arquivos, o CSV com os microdados foi armazenado na plataforma Databricks, carregado para o sistema de arquivos distribuído (DBFS) da plataforma e a partir disso foi criada a tabela bronze, com os dados brutos a serem usados no projeto.
+####2. Coleta
+Conforme mencionado, os dados utilizados nesse projeto são compostos pelos microdados do Exame Nacional do Ensino Médio (ENEM) referentes ao ano de 2023, que são disponibilizados publicamente no site do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP).
+
+Os dados foram coletados a partir do download manual do arquivo CSV com os microdados,uma vez que se tratam de públicos e estruturados. Os arquivos baixados incluem os microdados, com assim como a [documentação](https://dbc-584c76cc-ac43.cloud.databricks.com/editor/files/4433784861577730?o=3173063251617445) e o [dicionário de dados](/Workspace/Users/daniellerocha21@gmail.com/MVP_Engenharia_de_Dados_PUC_Rio_202502/Dicionário_Microdados_Enem_2023.xlsx) referente ao ano analisado.
+
+Após o download dos arquivos, o CSV com os microdados foi armazenado na plataforma Databricks, carregado para o sistema de arquivos distribuído (DBFS) da plataforma e a partir disso foi criada a tabela bronze, com os dados brutos a serem usados no projeto.
 
 
-    ####3. Modelagem
+####3. Modelagem
 O modelo escolhidos para estruturar os dados deste MPV foi o Esquema Estrela.
 
-    #####   3.1 Estrutura do Esquema Estrela
+#####   3.1 Estrutura do Esquema Estrela
     - Tabela Fato: `gold.fato_enem2023`
     - Tabelas Dimensão: `gold.dim_local` e `gold.dim_candidato` 
 
-    #####   3.2 Catálogo de Dados
+#####   3.2 Catálogo de Dados
 
      - Tabela `gold.fato_enem2023` 
      
@@ -120,23 +118,20 @@ Essa tabela contém as UF da federação e uma chave SK_LOCAL que se realciona c
 ![Diagrama Entidade Relacionamento](Modelo ER.drawio.png)
     
 #### 4. Carga
+A etapa de carga dos dados para o Data Warehoure/ Data Lake foi realizada no Notebook **01 - Ingestão de Dados**, onde foi realizada a carga inicial dos dados bruto (camada bronze).
 
-    A etapa de carga dos dados para o Data Warehoure/ Data Lake foi realizada no Notebook **01 - Ingestão de Dados**, onde foi realizada a carga inicial dos dados bruto (camada bronze).
+A etapa de transformação dos Dados foi realizada no Notebook **02 - Transformação dos Dados**, na qual foram realizadas as ações de limpeza, padronização, tratamento de tipos, mapeamento de códigos e criação da camada Silver.
 
-    A etapa de transformação dos Dados foi realizada no Notebook **02 - Transformação dos Dados**, na qual foram realizadas as ações de limpeza, padronização, tratamento de tipos, mapeamento de códigos e criação da camada Silver.
-
-    A etapa de carga foi realizada no no Notebook **03 - Tabelas Gold**, onde foram criadas as tabelas fato e dimensão na camada Gold.
+A etapa de carga foi realizada no no Notebook **03 - Tabelas Gold**, onde foram criadas as tabelas fato e dimensão na camada Gold.
 
 
 #### 5. Análise
 
-    a. Qualidade de dados
-        
-    A etapa de analise de cada atributo do conjuto de dados no que diz respeiro a qualidade dos dados foi realizada no Notebook **02 - Transformação dos Dados**
+#####a. Qualidade de dados
+ A etapa de analise de cada atributo do conjuto de dados no que diz respeiro a qualidade dos dados foi realizada no Notebook **02 - Transformação dos Dados**
 
-    b. Solução do problema
-    
-    A solução do problema foi realizada no notebook **04 - Solução do Problema**, onde foram feitas as análises com o intuito de responder as perguntas levantadas no objetivo deste projeto.
+#####b. Solução do problema
+A solução do problema foi realizada no notebook **04 - Solução do Problema**, onde foram feitas as análises com o intuito de responder as perguntas levantadas no objetivo deste projeto.
 
 
 #### 6. Autoavaliação
