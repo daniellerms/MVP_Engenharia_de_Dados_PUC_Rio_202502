@@ -2,11 +2,6 @@
 
 **Autor:** Danielle Rocha Macedo da Silva
 
-**Data:** 21/12/2025
-
-
-**Matricula:**
-
 **Dataset:** [Microdadodos Enem 2023](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem)
 
 ## Objetivo
